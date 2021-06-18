@@ -14,3 +14,24 @@
 //   [2, 7, 1],
 //   [8, 10, 5],
 // ]) // true
+
+const esMatrizCuadrada = (matriz) => {
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            return matriz[j].length === matriz.length
+        }
+    }
+}
+
+
+console.log(esMatrizCuadrada([
+    [4, 5, 4, 7, 8, 9],
+    [2, 7, 1],
+    [8, 10],
+]));
+
+console.log(esMatrizCuadrada([
+    [4, 5, 9],
+    [2, 7, 1],
+    [8, 10, 5],
+]));
