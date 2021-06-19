@@ -18,3 +18,18 @@
 //     [0, 0, 0, 0], 
 //     [0, 0, 0, 0, 0]
 //   ] */
+
+const generarMatrizEscalonada = (filas) =>{
+    let matrizEscalonada = []
+    for (let i = 0; i < filas; i++) {
+        let fila = []
+        for (let j = 0; j < i+1; j++) {
+            fila.push(0)
+        }
+        matrizEscalonada.push(fila)
+    }
+    return matrizEscalonada
+}
+
+console.log(generarMatrizEscalonada(3));
+console.log(generarMatrizEscalonada(5));
