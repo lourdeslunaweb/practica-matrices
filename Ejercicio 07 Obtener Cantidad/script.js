@@ -9,3 +9,24 @@
 //   ['🍎', '🍏', '🍌'],
 //   ['🍏', '🍌', '🍎', '🍌'],
 // ]) // 4
+
+
+const obtenerCantidad = (item, items) => {
+    for (let i = 0; i < items.length; i++){
+        let contador = []
+        for (let j = 0; j < items[i].length; j++){
+            if(items[i][j] === item){
+                contador.push(item)
+            }
+        }
+        return contador.length
+    }
+}
+
+
+console.log(obtenerCantidad('🍎', [
+    ['🍎', '🍏', '🍌', '🍌'],
+    ['🍌', '🍎'],
+    ['🍎', '🍏', '🍌'],
+    ['🍏', '🍌', '🍎', '🍌'],
+    ]))

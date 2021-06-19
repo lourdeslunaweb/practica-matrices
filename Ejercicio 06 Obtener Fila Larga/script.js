@@ -5,3 +5,18 @@
 
 // obtenerFilaMasLarga([[1, 4], [3, 7, 5], [1]]) // [3, 7, 5]
 // obtenerFilaMasLarga([[1], [3, 7], [6, 8]]) // [3, 7]
+
+const obtenerFilaMasLarga = (matriz) =>{
+    let filaLarga = []
+    for (let i = 0; i < matriz.length ; i++){
+        for (let j = 0; j < matriz[i].length; j++){
+            if (matriz[i].length > filaLarga.length){
+                filaLarga = matriz[i]
+            } 
+        }
+    } 
+    return filaLarga
+}
+
+console.log(obtenerFilaMasLarga([[1, 4], [3, 7, 5], [1]]));
+console.log(obtenerFilaMasLarga([[1], [3, 7], [6, 8]]))
