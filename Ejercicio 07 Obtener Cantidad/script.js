@@ -12,15 +12,15 @@
 
 
 const obtenerCantidad = (item, items) => {
+    let contador = []
     for (let i = 0; i < items.length; i++){
-        let contador = []
         for (let j = 0; j < items[i].length; j++){
             if(items[i][j] === item){
                 contador.push(item)
             }
         }
-        return contador.length
     }
+    return contador.length
 }
 
 
