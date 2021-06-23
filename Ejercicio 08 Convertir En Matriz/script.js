@@ -9,8 +9,16 @@
 // convertirEnMatriz(4, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]) // [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11]]
 
 const convertirEnMatriz = (columnas, array) =>{
-
-
+    let matrizNueva = []
+    for (let i = 0; i < columnas; i++) {
+        let fila = []
+        for (let j = 0; j < columnas; j++) {
+            
+            fila.push(array[j])
+        }
+        matrizNueva.push(fila)
+    }
+    return matrizNueva
 }
 
 
